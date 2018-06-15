@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="/RegistWeb/TestRegist" method="post">
+		<table>
+		<tr>
+			<td>输入用户名 </td>
+			<td>
+				<input type="text" name="username" id="userID">
+			</td>
+		</tr>
+		<tr>
+			<td>输入密码 </td>
+			<td>
+				<input type="password" name="password" id="PSID">
+			</td>
+		</tr>
+		<tr>
+			<td>选择性别 </td>
+			<td>
+				<input type="radio" name="sex" value="nan">男
+				<input type="radio" name="sex" value="nv">女
+			</td>
+		</tr>
+		<tr>
+			<td>选择爱好 </td>
+			<td>
+				<input type="checkbox" name="love" value="lq">篮球
+				<input type="checkbox" name="love" value="zq">足球
+				<input type="checkbox" name="love" value="pq">排球
+			</td>
+		</tr>
+		<tr>
+			<td>选择城市</td>
+			<td>
+				<select name="city">
+					<option value="none">---请选择---</option>
+					<option value="bj">北京</option>
+					<option value="sh">上海</option>
+					<option value="gz">广州</option>
+					<option value="sz">深圳</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<input type="submit" value="提交">
+			</td>
+		</tr>
+		</table>
+	</form>
+</body>
+</html>
