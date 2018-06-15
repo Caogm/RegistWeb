@@ -13,7 +13,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.dbutils.DbUtils;
-import org.apache.commons.dbutils.QueryRunner;
 
 import cn.Pojo.RegistClass;
 import cn.Utils.JDBCUtils;
@@ -65,7 +64,7 @@ public class TestRegist extends HttpServlet {
 
 		//
 		try {
-			insert1();
+			insert1(re);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -82,10 +81,10 @@ public class TestRegist extends HttpServlet {
 		doGet(request, response);
 	}
 
-	public static void insert1() throws SQLException {
+	public static void insert1(RegistClass rec) throws SQLException {
 		Connection connection = JDBCUtils.getConnection();
-		RegistClass rec = new RegistClass();
-		QueryRunner qRunner = new QueryRunner();
+
+		// QueryRunner qRunner = new QueryRunner();
 
 		System.out.println(rec.getUsername());
 		System.out.println(rec.getPassword());

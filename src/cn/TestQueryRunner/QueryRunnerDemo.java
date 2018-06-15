@@ -17,19 +17,15 @@ import cn.Pojo.RegistClass;
 import cn.Utils.JDBCUtils;
 
 public class QueryRunnerDemo {
-
 	public static void main(String[] args) throws SQLException {
-		insert();
+
+		// insert2(re);
 
 	}
 
-	public static void insert() throws SQLException {
+	public static void insert2(RegistClass rec) throws SQLException {
 		Connection connection = JDBCUtils.getConnection();
 		QueryRunner qRunner = new QueryRunner();
-		RegistClass rec = new RegistClass();
-
-		// System.out.println(rec.getUsername());
-		// System.out.println(rec.getPassword());
 		String u = rec.getUsername();
 		String p = rec.getPassword();
 		String sql = "INSERT INTO regist (username,password) VALUES (?,?)";
