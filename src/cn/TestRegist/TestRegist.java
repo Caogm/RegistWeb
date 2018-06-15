@@ -15,6 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.apache.commons.dbutils.DbUtils;
 
 import cn.Pojo.RegistClass;
+import cn.TestQueryRunner.QueryRunnerDemo;
 import cn.Utils.JDBCUtils;
 
 /**
@@ -64,7 +65,8 @@ public class TestRegist extends HttpServlet {
 
 		//
 		try {
-			insert1(re);
+			// insert1(re);
+			QueryRunnerDemo.insert2(re);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

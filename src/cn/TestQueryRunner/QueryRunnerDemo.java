@@ -19,8 +19,6 @@ import cn.Utils.JDBCUtils;
 public class QueryRunnerDemo {
 	public static void main(String[] args) throws SQLException {
 
-		// insert2(re);
-
 	}
 
 	public static void insert2(RegistClass rec) throws SQLException {
